@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "unit-test-course-2021-1": {
+    "unit-test-course-2023-1": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/unit-test-course-2021-1",
+            "outputPath": "dist/unit-test-course-2023-1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "unit-test-course-2021-1:build:production"
+              "browserTarget": "unit-test-course-2023-1:build:production"
             },
             "development": {
-              "browserTarget": "unit-test-course-2021-1:build:development"
+              "browserTarget": "unit-test-course-2023-1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "unit-test-course-2021-1:build"
+            "browserTarget": "unit-test-course-2023-1:build"
           }
         },
         "test": {
