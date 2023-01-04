@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { StubComponent } from './stub/stub.component';
+import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FixProblemsComponent,
-    StubComponent
+    StubComponent,
+    DebuggerTestsComponent
   ],
   imports: [
     BrowserModule,
