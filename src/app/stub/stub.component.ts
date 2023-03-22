@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-stub',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./stub.component.scss']
 })
 export class StubComponent {
+
+  constructor(private router: Router) {}
+
+  goTo(): void {
+    this.router.navigate(['/home']);
+  }
 
 }

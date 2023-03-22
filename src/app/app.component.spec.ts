@@ -1,15 +1,22 @@
-import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.component';
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+
+import { MatDialogModule } from '@angular/material/dialog';
+
 import { AppComponent } from './app.component';
 import { FixProblemsComponent } from './fix-problems/fix-problems.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MockServiceComponent } from './mock-service/mock-service.component';
+import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.component';
+import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.component';
+import { StubComponent } from './stub/stub.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
+        HttpClientTestingModule,
         RouterTestingModule,
         MatDialogModule,
         ReactiveFormsModule,
@@ -18,7 +25,10 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent,
         FixProblemsComponent,
-        DebuggerTestsComponent
+        DebuggerTestsComponent,
+        MatchersJasmineComponent,
+        MockServiceComponent,
+        StubComponent
       ],
     }).compileComponents();
   });

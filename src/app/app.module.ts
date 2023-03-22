@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -9,13 +10,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { StubComponent } from './stub/stub.component';
 import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.component';
+import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.component';
+import { MockServiceComponent } from './mock-service/mock-service.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FixProblemsComponent,
     StubComponent,
-    DebuggerTestsComponent
+    DebuggerTestsComponent,
+    MatchersJasmineComponent,
+    MockServiceComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +30,7 @@ import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.componen
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     MatDialogModule
   ],
   providers: [],

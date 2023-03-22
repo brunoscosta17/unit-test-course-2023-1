@@ -18,7 +18,6 @@ describe('DebuggerTestsComponent', () => {
   });
 
   it('should create', () => {
-    debugger;
     let data = { name: 'Bruno' }
     expect(component).toBeTruthy();
   });
