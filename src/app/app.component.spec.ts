@@ -11,6 +11,7 @@ import { MockServiceComponent } from './mock-service/mock-service.component';
 import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.component';
 import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.component';
 import { StubComponent } from './stub/stub.component';
+import { SpyonComponent } from './spyon/spyon.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -28,7 +29,8 @@ describe('AppComponent', () => {
         DebuggerTestsComponent,
         MatchersJasmineComponent,
         MockServiceComponent,
-        StubComponent
+        StubComponent,
+        SpyonComponent
       ],
     }).compileComponents();
   });

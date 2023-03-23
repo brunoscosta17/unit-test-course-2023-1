@@ -13,6 +13,7 @@ import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.componen
 import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.component';
 import { MockServiceComponent } from './mock-service/mock-service.component';
 import { HomeComponent } from './home/home.component';
+import { SpyonComponent } from './spyon/spyon.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './home/home.component';
     DebuggerTestsComponent,
     MatchersJasmineComponent,
     MockServiceComponent,
-    HomeComponent
+    HomeComponent,
+    SpyonComponent
   ],
   imports: [
     BrowserModule,
