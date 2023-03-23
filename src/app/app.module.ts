@@ -14,6 +14,7 @@ import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.co
 import { MockServiceComponent } from './mock-service/mock-service.component';
 import { HomeComponent } from './home/home.component';
 import { SpyonComponent } from './spyon/spyon.component';
+import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SpyonComponent } from './spyon/spyon.component';
     MatchersJasmineComponent,
     MockServiceComponent,
     HomeComponent,
-    SpyonComponent
+    SpyonComponent,
+    SpyOnPropertyComponent
   ],
   imports: [
     BrowserModule,
