@@ -8,6 +8,9 @@ describe('SpyonService', () => {
 
   let service: SpyonService;
 
+  const logger = jasmine.createSpy('log');
+  const status = jasmine.createSpyObj('service', ['name', 'age', 'email'])
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule]
@@ -29,6 +32,27 @@ describe('SpyonService', () => {
     service.getUsers().subscribe(res => {
       expect(res).toEqual(response);
     });
+  });
+
+  it('Deve criar método jasmine.createSpy', () => {
+    logger('Loguei no sistema.');
+    expect(logger).toHaveBeenCalledTimes(1);
+    expect(logger).toHaveBeenCalledWith('Loguei no sistema.');
+  });
+
+  it('Deve criar métodos com jasmine.createSpyObj', () => {
+    status.name('Bruno');
+    status.age(35);
+    status.email('brunoscosta17@gmail.com');
+    expect(status.name).toHaveBeenCalled();
+    expect(status.name).toHaveBeenCalledWith('Bruno');
+    expect(status.name).toHaveBeenCalledTimes(1);
+    expect(status.age).toHaveBeenCalled();
+    expect(status.age).toHaveBeenCalledWith(35);
+    expect(status.age).toHaveBeenCalledTimes(1);
+    expect(status.email).toHaveBeenCalled();
+    expect(status.email).toHaveBeenCalledWith('brunoscosta17@gmail.com');
+    expect(status.email).toHaveBeenCalledTimes(1);
   });
 
 });
