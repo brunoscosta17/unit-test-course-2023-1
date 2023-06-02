@@ -1,9 +1,10 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { Injectable } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 
 import { MyServiceService } from './my-service.service';
-
+@Injectable()
 class MyServiceMock extends MyServiceService {
   responseMock = [
     {

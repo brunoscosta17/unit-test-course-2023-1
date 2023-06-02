@@ -12,6 +12,8 @@ import { MatchersJasmineComponent } from './matchers-jasmine/matchers-jasmine.co
 import { DebuggerTestsComponent } from './debugger-tests/debugger-tests.component';
 import { StubComponent } from './stub/stub.component';
 import { SpyonComponent } from './spyon/spyon.component';
+import { RequestComponent } from './request/request.component';
+import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -30,7 +32,9 @@ describe('AppComponent', () => {
         MatchersJasmineComponent,
         MockServiceComponent,
         StubComponent,
-        SpyonComponent
+        SpyonComponent,
+        SpyOnPropertyComponent,
+        RequestComponent,
       ],
     }).compileComponents();
   });
