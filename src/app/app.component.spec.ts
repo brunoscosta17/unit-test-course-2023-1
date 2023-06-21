@@ -14,6 +14,7 @@ import { StubComponent } from './stub/stub.component';
 import { SpyonComponent } from './spyon/spyon.component';
 import { RequestComponent } from './request/request.component';
 import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.component';
+import { AsynchronousComponent } from './asynchronous/asynchronous.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -35,6 +36,7 @@ describe('AppComponent', () => {
         SpyonComponent,
         SpyOnPropertyComponent,
         RequestComponent,
+        AsynchronousComponent
       ],
     }).compileComponents();
   });

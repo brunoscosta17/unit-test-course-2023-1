@@ -39,4 +39,25 @@ export class HttpService {
     return this.http.get(`${this.url}/users`, { headers });
   }
 
+  getUsersWithPromise() {
+    const promise =  new Promise((resolve, reject) => {
+      this.http.get(`${this.url}/users`).subscribe(({
+        next: (res: any) => {
+          resolve(res);
+        },
+        error: (err: any) => {
+          reject(err)
+        },
+        complete: () => {
+          console.log('complete')
+        }
+      }))
+    })
+    return promise;
+  }
+
+  isAuthenticated() {
+    return Promise.resolve(true);
+  }
+
 }
