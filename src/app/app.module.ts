@@ -18,6 +18,10 @@ import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.compon
 import { RequestComponent } from './request/request.component';
 import { AsynchronousComponent } from './asynchronous/asynchronous.component';
 import { TestingComponentComponent } from './testing-component/testing-component.component';
+import { FixtureDetectChangesComponent } from './fixture-detect-changes-component/fixture-detect-changes-component.component';
+import { FillFormComponent } from './fill-form/fill-form.component';
+import { HandleEventComponent } from './handle-event/handle-event.component';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { TestingComponentComponent } from './testing-component/testing-component
     SpyOnPropertyComponent,
     RequestComponent,
     AsynchronousComponent,
-    TestingComponentComponent
+    TestingComponentComponent,
+    FixtureDetectChangesComponent,
+    FillFormComponent,
+    HandleEventComponent,
+    InputOutputComponent
   ],
   imports: [
     BrowserModule,

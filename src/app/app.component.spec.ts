@@ -15,6 +15,11 @@ import { SpyonComponent } from './spyon/spyon.component';
 import { RequestComponent } from './request/request.component';
 import { SpyOnPropertyComponent } from './spy-on-property/spy-on-property.component';
 import { AsynchronousComponent } from './asynchronous/asynchronous.component';
+import { TestingComponentComponent } from './testing-component/testing-component.component';
+import { FixtureDetectChangesComponent } from './fixture-detect-changes-component/fixture-detect-changes-component.component';
+import { FillFormComponent } from './fill-form/fill-form.component';
+import { HandleEventComponent } from './handle-event/handle-event.component';
+import { InputOutputComponent } from './input-output/input-output.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -36,7 +41,12 @@ describe('AppComponent', () => {
         SpyonComponent,
         SpyOnPropertyComponent,
         RequestComponent,
-        AsynchronousComponent
+        AsynchronousComponent,
+        TestingComponentComponent,
+        FixtureDetectChangesComponent,
+        HandleEventComponent,
+        FillFormComponent,
+        InputOutputComponent
       ],
     }).compileComponents();
   });
