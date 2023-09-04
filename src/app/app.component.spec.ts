@@ -20,6 +20,8 @@ import { FixtureDetectChangesComponent } from './fixture-detect-changes-componen
 import { FillFormComponent } from './fill-form/fill-form.component';
 import { HandleEventComponent } from './handle-event/handle-event.component';
 import { InputOutputComponent } from './input-output/input-output.component';
+import { TestingPipesDirectiveRoutesComponent } from './testing-pipes-directive-routes/testing-pipes-directive-routes.component';
+import { HttpPipe } from './http.pipe';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -46,8 +48,11 @@ describe('AppComponent', () => {
         FixtureDetectChangesComponent,
         HandleEventComponent,
         FillFormComponent,
-        InputOutputComponent
+        InputOutputComponent,
+        TestingPipesDirectiveRoutesComponent,
+        HttpPipe
       ],
+      providers: [HttpPipe]
     }).compileComponents();
   });
 

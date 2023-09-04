@@ -11,9 +11,7 @@ export class AppComponent {
   title = 'unit-test-course-2023-1';
   user: any;
 
-  constructor(private router: Router) {
-
-  }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     this.user = {name: 'Danilo', email: 'danilodev.silva@gmail.com', password: '091011'}

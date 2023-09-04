@@ -22,6 +22,8 @@ import { FixtureDetectChangesComponent } from './fixture-detect-changes-componen
 import { FillFormComponent } from './fill-form/fill-form.component';
 import { HandleEventComponent } from './handle-event/handle-event.component';
 import { InputOutputComponent } from './input-output/input-output.component';
+import { TestingPipesDirectiveRoutesComponent } from './testing-pipes-directive-routes/testing-pipes-directive-routes.component';
+import { HttpPipe } from './http.pipe';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { InputOutputComponent } from './input-output/input-output.component';
     FixtureDetectChangesComponent,
     FillFormComponent,
     HandleEventComponent,
-    InputOutputComponent
+    InputOutputComponent,
+    HttpPipe,
+    TestingPipesDirectiveRoutesComponent,
   ],
   imports: [
     BrowserModule,
@@ -51,7 +55,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
     HttpClientModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [HttpPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
