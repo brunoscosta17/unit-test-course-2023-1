@@ -28,6 +28,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
 import { TestingRoutesComponent } from './testing-routes/testing-routes.component';
 import { ExtratoComponent } from './extrato/extrato.component';
+import { HoverFocusDirective } from './hover-focus.directive';
+import { TestingDirectiveComponent } from './testing-directive/testing-directive.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { ExtratoComponent } from './extrato/extrato.component';
     LoginComponent,
     TestingRoutesComponent,
     ExtratoComponent,
+    HoverFocusDirective,
+    TestingDirectiveComponent,
   ],
   imports: [
     BrowserModule,

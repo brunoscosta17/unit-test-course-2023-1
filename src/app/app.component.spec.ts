@@ -23,6 +23,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { TestingPipesDirectiveRoutesComponent } from './testing-pipes-directive-routes/testing-pipes-directive-routes.component';
 import { HttpPipe } from './http.pipe';
 import { TestingRoutesComponent } from './testing-routes/testing-routes.component';
+import { TestingDirectiveComponent } from './testing-directive/testing-directive.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -52,7 +53,8 @@ describe('AppComponent', () => {
         InputOutputComponent,
         TestingPipesDirectiveRoutesComponent,
         HttpPipe,
-        TestingRoutesComponent
+        TestingRoutesComponent,
+        TestingDirectiveComponent
       ],
       providers: [HttpPipe]
     }).compileComponents();
