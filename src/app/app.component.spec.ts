@@ -22,6 +22,7 @@ import { HandleEventComponent } from './handle-event/handle-event.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { TestingPipesDirectiveRoutesComponent } from './testing-pipes-directive-routes/testing-pipes-directive-routes.component';
 import { HttpPipe } from './http.pipe';
+import { TestingRoutesComponent } from './testing-routes/testing-routes.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -50,7 +51,8 @@ describe('AppComponent', () => {
         FillFormComponent,
         InputOutputComponent,
         TestingPipesDirectiveRoutesComponent,
-        HttpPipe
+        HttpPipe,
+        TestingRoutesComponent
       ],
       providers: [HttpPipe]
     }).compileComponents();
