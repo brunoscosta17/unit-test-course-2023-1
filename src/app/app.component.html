@@ -11,5 +11,9 @@
 <!-- <app-handle-event></app-handle-event> -->
 <!-- <app-fill-form></app-fill-form> -->
 <!-- <app-input-output [user]="user" (userMessage)="getUserMessage($event)"></app-input-output> -->
+<!-- <app-testing-pipes-directive-routes></app-testing-pipes-directive-routes> -->
 
-<app-testing-pipes-directive-routes></app-testing-pipes-directive-routes>
+<h1>Testando Guarda de rotas</h1>
+<button (click)="goTo('dashboard')">Home</button>
+
+<router-outlet></router-outlet>

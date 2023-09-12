@@ -24,6 +24,8 @@ import { HandleEventComponent } from './handle-event/handle-event.component';
 import { InputOutputComponent } from './input-output/input-output.component';
 import { TestingPipesDirectiveRoutesComponent } from './testing-pipes-directive-routes/testing-pipes-directive-routes.component';
 import { HttpPipe } from './http.pipe';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { HttpPipe } from './http.pipe';
     InputOutputComponent,
     HttpPipe,
     TestingPipesDirectiveRoutesComponent,
+    DashboardComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
